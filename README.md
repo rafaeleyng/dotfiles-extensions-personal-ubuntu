@@ -1,2 +1,9 @@
 # dotfiles-extensions-personal-ubuntu
-My Ubuntu extensions to https://github.com/rafaeleyng/dotfiles
+
+Ubuntu extensions for https://github.com/rafaeleyng/dotfiles.
+
+## [shellcheck](https://www.shellcheck.net/)
+
+```sh
+docker-compose up
+```
