@@ -1,0 +1,6 @@
+[gpg]
+  format = ssh
+[user]
+  signingkey = /home/rafael/.ssh/id_rsa
+[commit]
+  gpgsign = true
