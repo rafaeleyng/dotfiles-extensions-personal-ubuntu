@@ -1,18 +1,20 @@
 #!/bin/zsh
 
-# arcano
-
-
 ########################################
 # pactl
 ########################################
 # Logitech webcam
-SOURCE_RAW="alsa_input.usb-046d_HD_Pro_Webcam_C920_AF6A747F-02.iec958-stereo"
-# Display Asus
-SINK_RAW="alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1"
+SOURCE_RAW="alsa_input.usb-046d_HD_Pro_Webcam_C920_AF6A747F-02.analog-stereo"
+
+# Line out
+SINK_RAW="alsa_output.pci-0000_00_1f.3.analog-stereo"
+
+# # Display Asus
+# SINK_RAW="alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1"
 
 # Arcano Black
 SOURCE_PRO="alsa_input.usb-ARCANO_AM-BLACK-1_ARCANO_AM-BLACK-1-00.mono-fallback"
+
 # Galaxy Buds+
 SINK_PRO="bluez_sink.08_BF_A0_D7_01_35.a2dp_sink"
 
@@ -22,7 +24,9 @@ function configure_sound () {
   SOURCE=$1
   SINK=$2
 
+  echo "Setting source: $SOURCE"
   s set-default-source "$SOURCE"
+  echo "Setting sink  : $SINK"
   s set-default-sink "$SINK"
 }
 
