@@ -80,3 +80,7 @@ alias s4="configure_sound \"$SOURCE_PRO\" \"$SINK_PRO\"" # pro
 ########################################
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+
+# TODO remove, only added temporarily for a course
+alias mygit="bun ${HOME}/code/rafael/codecrafters-git-typescript/app/main.ts"
+alias docker-compose="docker compose"
