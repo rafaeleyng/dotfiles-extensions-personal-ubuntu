@@ -1,4 +1,4 @@
-# dotfiles-extensions-personal-ubuntu
+# dotfiles-extensions-ubuntu
 
 Ubuntu extensions for https://github.com/rafaeleyng/dotfiles.
 
